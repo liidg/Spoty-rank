@@ -7,6 +7,10 @@ from .models import userSavedTracks
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
+
+def index(request):
+    return render(request, 'index.html')
+
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id="d2734d61db194aec983f37790ccaf643",
                                                client_secret="4aec1ba661014bb29fba8615bd5ebd1e",
                                                redirect_uri="http://localhost:8000/callback",
@@ -30,7 +34,9 @@ for idx, item in enumerate(results['items']):
 #print(counter/len(trackList))
 
 
+def playlist(request):
+    return render(request, 'playlist.html', {'trackList': trackList})
 
-def index(request):
-    return render(request, 'index.html', {'trackList': trackList})
+    
+
 
