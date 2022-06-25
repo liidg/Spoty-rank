@@ -1,5 +1,5 @@
 # Spoty-rank
-A Django project where i use the spotify-api i'm still thinking about what to do, for now the idea is to use the popularity of each of your 20 last songs
+A Django project where i use the spotify-api i'm still thinking about what to do, for now the idea is to use the popularity of each of your 20 last saved songs
 to get the avg then this will be how tunned you are to the trendings, this will give you a profile like "You are Trend" if you get 90-100
 or "You are so Underground" for something between 0-20 popularity.
 
